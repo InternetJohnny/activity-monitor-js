@@ -1,0 +1,8 @@
+version: 1.0.0
+files:
+  - url: activity-monitor-Setup-1.0.0.exe
+    sha512: 4CIKdm+xhxuYnoqg5SDlYsyrKKtupRw2FkMccKtf+EC0wYZhgdMrw+3c4VtPS+f+aQMCEsWRs7Me06N7lTEyvQ==
+    size: 38730530
+path: activity-monitor-Setup-1.0.0.exe
+sha512: 4CIKdm+xhxuYnoqg5SDlYsyrKKtupRw2FkMccKtf+EC0wYZhgdMrw+3c4VtPS+f+aQMCEsWRs7Me06N7lTEyvQ==
+releaseDate: '2020-04-11T18:03:18.694Z'

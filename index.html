@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';" /> -->
+
+    <title>Activity Monitor</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/style.min.css" />
+
+    <!-- Scripts -->
+    <script>
+      delete module.exports;
+    </script>
+    <script src="./scripts/imports/jquery.min.js"></script>
+    <script src="./scripts/imports/chart.bundle.min.js"></script>
+    <script src="./scripts/imports/fontawesome.js"></script>
+    <!-- <script src="./scripts/dynamic.js"></script> -->
+    <script src="./scripts/window.js"></script>
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="options">
+        <a id="pin" class="button" onclick="pinWindow()">
+          <i class="fas fa-map-pin"></i>
+        </a>
+        <!-- <a id="resize" class="button" onclick="resizeWindow()">
+          <i class="fas fa-compress"></i>
+        </a> -->
+        <a id="grayscale" class="button" onclick="toggleGrayscale()">
+          <i class="fas fa-adjust"></i>
+        </a>
+      </div>
+      <a id="close" class="button" onclick="closeWindow()">
+        <i class="fas fa-times"></i>
+      </a>
+    </div>
+    <div class="blloc" id="ram">
+      <div class="blloc-data">
+        <span class="title">RAM</span>
+        <span class="value"></span>
+      </div>
+      <div class="blloc-graph">
+        <canvas class="chart" id="ram1"></canvas>
+      </div>
+    </div>
+    <div class="blloc" id="cpu">
+      <div class="blloc-data">
+        <span class="title">CPU</span>
+        <span class="value"></span>
+      </div>
+      <div class="blloc-graph">
+        <canvas class="chart" id="cpu1"></canvas>
+      </div>
+    </div>
+  </body>
+</html>
