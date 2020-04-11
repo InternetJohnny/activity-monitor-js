@@ -11,7 +11,7 @@ app.once("ready", () => {
   window = new BrowserWindow({
     useContentSize: true,
     // Set the initial width to 500px
-    width: 280,
+    width: 1280,
     // Set the initial height to 400px
     height: 400,
     // set the title bar style

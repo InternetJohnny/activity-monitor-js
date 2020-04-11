@@ -4,10 +4,12 @@ const os = require("os-utils");
 // General Chart class
 let ChartInstance = class {
   constructor(blloc_id) {
+    this.blloc = $(blloc_id);
     this.blloc_text = $(blloc_id).find(".value");
     this.donut = null;
     this.data;
     this.isGrayscale = false;
+    this.interface = 0;
     this.setData().then(() => {
       this.drawChart(blloc_id);
       this.setWindowSize();
@@ -15,9 +17,23 @@ let ChartInstance = class {
   }
 
   toggleGrayscale() {
-    console.log("toggling");
     this.isGrayscale = !this.isGrayscale;
     this.updateDatasets();
+  }
+
+  toggleInterface() {
+    this.interface = (this.interface + 1) % 3;
+    if (this.interface == 0) {
+      this.blloc.removeClass("small");
+    }
+    if (this.interface == 1) {
+      this.blloc.addClass("medium");
+    }
+    if (this.interface == 2) {
+      this.blloc.removeClass("medium");
+      this.blloc.addClass("small");
+    }
+    console.log("interface=" + this.interface);
   }
 
   setWindowSize() {
@@ -135,6 +151,5 @@ let CpuData = class extends ChartInstance {
   }
 };
 
-module.exports.ChartInstance = ChartInstance;
 module.exports.RamData = RamData;
 module.exports.CpuData = CpuData;
