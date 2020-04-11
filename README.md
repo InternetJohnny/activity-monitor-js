@@ -2,7 +2,7 @@
 
 Simple [Electron](http://electron.atom.io) application that shows RAM and CPU usage.
 
-![image-20200411194106167](C:\Users\joaoa\AppData\Roaming\Typora\typora-user-images\image-20200411194106167.png)
+![image-20200411194106167](./assets/screenshot.png)
 
 ## Features
 
