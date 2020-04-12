@@ -34,6 +34,7 @@ body {
   margin: 0.2em;
 }
 
+// Blloc styles
 .blloc {
   -webkit-app-region: drag;
   background-color: #111;
@@ -68,10 +69,11 @@ body {
 }
 
 .chart {
-  max-height: 4em;
-  max-width: 4em;
+  height: 4em;
+  width: 4em;
 }
 
+// Nav bar style
 .nav {
   display: flex;
   flex-flow: row nowrap;
@@ -104,6 +106,7 @@ body {
   }
 }
 
+// Different Interface Sizes
 .small {
   padding: 0.4em 0.5em;
   .blloc-data {
@@ -129,11 +132,10 @@ body {
 
   .blloc-data > * {
     font-size: 1.8em;
-    // text-transform: lowercase !important;
   }
 
   .chart {
-    max-height: 2.8em;
-    max-width: 2.8em;
+    max-height: 3em;
+    max-width: 3em;
   }
 }

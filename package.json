@@ -1,7 +1,7 @@
 {
   "name": "activity-monitor",
-  "version": "0.1.1",
-  "description": "CPU activity monitor",
+  "version": "0.1.2",
+  "description": "Activity Monitor",
   "repository": "electron/simple-samples",
   "main": "app.js",
   "scripts": {
@@ -13,6 +13,8 @@
     "electron": "^3.0.2"
   },
   "dependencies": {
+    "chart.js": "^2.9.3",
+    "jquery": "^3.5.0",
     "os-utils": "^0.0.14"
   }
 }

@@ -3,20 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';" /> -->
-
     <title>Activity Monitor</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/style.min.css" />
 
     <!-- Scripts -->
-    <script>
-      delete module.exports;
-    </script>
-    <script src="./scripts/imports/jquery.min.js"></script>
-    <script src="./scripts/imports/chart.bundle.min.js"></script>
-    <script src="./scripts/imports/fontawesome.js"></script>
-    <!-- <script src="./scripts/dynamic.js"></script> -->
     <script src="./scripts/window.js"></script>
   </head>
 
@@ -43,7 +35,7 @@
         <span class="value"></span>
       </div>
       <div class="blloc-graph">
-        <canvas class="chart" id="ram1"></canvas>
+        <canvas class="chart"></canvas>
       </div>
     </div>
     <div class="blloc" id="cpu">
@@ -52,7 +44,7 @@
         <span class="value"></span>
       </div>
       <div class="blloc-graph">
-        <canvas class="chart" id="cpu1"></canvas>
+        <canvas class="chart"></canvas>
       </div>
     </div>
   </body>

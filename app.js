@@ -10,14 +10,10 @@ app.once("ready", () => {
   // Create a new window
   window = new BrowserWindow({
     useContentSize: true,
-    // Set the initial width to 500px
-    width: 1280,
-    // Set the initial height to 400px
+    width: 280,
     height: 400,
     // set the title bar style
     titleBarStyle: "hiddenInset",
-    // set the background color to black
-    //backgroundColor: "#000",
     // make the background transparent
     transparent: true,
     // don't show a frame around it
@@ -38,13 +34,12 @@ app.once("ready", () => {
 
   window.once("ready-to-show", () => {
     window.show();
-    // window.setSize();
   });
+});
 
-  ipcMain.on("pin-window", (event, arg) => {
-    isPinned = !isPinned;
-    window.setAlwaysOnTop(isPinned);
-  });
+ipcMain.on("pin-window", (event, arg) => {
+  isPinned = !isPinned;
+  window.setAlwaysOnTop(isPinned);
 });
 
 ipcMain.on("close-window", (event, arg) => {

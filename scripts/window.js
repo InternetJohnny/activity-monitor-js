@@ -1,6 +1,6 @@
 const { ipcRenderer } = require("electron");
-// import { RamData, CpuData } from "./scripts/chart.js";
-const { RamData, CpuData } = require("./scripts/chart.js");
+const $ = require("jquery");
+const { RamData, CpuData } = require("./scripts/chart-instance.js");
 
 const monitors = [];
 
@@ -28,6 +28,7 @@ function addMonitor(m) {
   monitors[monitors.length] = m;
 }
 
+// Instantiate Monitors
 $(() => {
   addMonitor(new RamData("#ram"));
   addMonitor(new CpuData("#cpu"));
